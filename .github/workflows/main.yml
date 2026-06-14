@@ -22,7 +22,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SONAR_TOKEN2: ${{ secrets.SONAR_TOKEN2 }}
-      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Sheilaa5_Simulasi-CICD2-Java -Dsonar.organization=sheilaa5
+      run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=Sheilaa5_Simulasi-CICD-Java -Dsonar.organization=sheilaa5
 
   # Tahap Continuous Deployment (CD) Simulasi
   deploy:
